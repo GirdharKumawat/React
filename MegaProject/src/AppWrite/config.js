@@ -124,11 +124,10 @@ class Service {
         }
     }
 
-    getfileUrl(fileId){
-        return this.bucket.getFileView(
-            conf.bucketId,
-            fileId);
-    }
+   getFilePreview(fileId)
+   {
+    return this.bucket.getFilePreview(conf.bucketId,fileId);    
+   }
 }
 
 

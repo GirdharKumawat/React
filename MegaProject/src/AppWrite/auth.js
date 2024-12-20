@@ -1,8 +1,7 @@
 import conf from '../conf/conf';
-import {client,Account, ID} from './AppWrite'
-
+import { Client, Account, ID } from "appwrite";
 class AuthServices {
-    client = client();
+    client = new Client();
     account;
     constructor(){
         this.client
